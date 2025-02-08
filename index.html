@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokulnath S | AI Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- 🔹 Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">Gokulnath S</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- 🔹 Hamburger Menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- 🔹 Mobile Sidebar Menu -->
+<div class="mobile-menu">
+    <div class="close-btn" onclick="toggleMenu()">&times;</div>
+    <ul>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</div>
+
+
+    <!-- 🔹 Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="assets\profile-pic (2).jpg" alt="Profile">
+            <h1>Welcome to My AI Portfolio</h1>
+            <p>Data Scientist | Python Developer | AI Enthusiast</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </header>
+
+<!-- 🔹 About Me Section -->
+<section id="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <span class="highlight">Gokulnath S</span>, a passionate <span class="highlight">Data Scientist & AI Enthusiast</span> 
+            with expertise in <span class="highlight">AI-powered applications, NLP, and deep learning</span>. 
+            I specialize in creating intelligent and interactive solutions that solve real-world problems.
+        </p>
+        <p>
+            I have hands-on experience in building <span class="highlight">end-to-end machine learning projects</span> and transforming data into actionable insights.
+        </p>
+        <p>
+            With a <span class="highlight">B.E. in Electronics and Communication Engineering</span> and a certification in Python and AI, 
+            I specialize in <span class="highlight">interactive dashboards, AI-driven solutions, and business intelligence applications</span>.
+        </p>
+        <p>
+            I also develop web applications using <span class="highlight">HTML, CSS, JavaScript, and Bootstrap</span> with advanced UI/UX principles.
+        </p>
+        <p>
+            Beyond AI, I enjoy <span class="highlight">teaching Python</span>, covering topics from basics to OOP concepts. 
+            I am committed to leveraging AI and data science to create impactful solutions. 🚀
+        </p>
+    </div>
+</section>
+
+
+
+
+<!-- 🔹 Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        
+        <!-- Flex Box 1: Programming & Development -->
+        <div class="skill-box">
+            <i class="fas fa-code"></i> <!-- Icon -->
+            <h3>Programming & Development</h3>
+            <ul>
+                <li>Programming & Scripting: Python, SQL, JavaScript, HTML, CSS</li>
+                <li>Web Development: HTML, CSS, JavaScript, Bootstrap</li>
+            </ul>
+        </div>
+
+        <!-- Flex Box 2: Machine Learning & AI -->
+        <div class="skill-box">
+            <i class="fas fa-robot"></i> <!-- Icon -->
+            <h3>Machine Learning & AI</h3>
+            <ul>
+                <li>Machine Learning & AI: Scikit-learn, TensorFlow, Deep Learning, NLP</li>
+                <li>AI Frameworks & APIs: Google Gemini AI, OpenAI API, LangChain</li>
+            </ul>
+        </div>
+
+        <!-- Flex Box 3: Data & Analytics -->
+        <div class="skill-box">
+            <i class="fas fa-chart-bar"></i> <!-- Icon -->
+            <h3>Data & Analytics</h3>
+            <ul>
+                <li>Data Visualization & Analytics: Power BI, Matplotlib, Seaborn, Plotly</li>
+                <li>Database Management: MySQL, Excel</li>
+            </ul>
+        </div>
+
+        <!-- Flex Box 4: Cloud & Deployment -->
+        <div class="skill-box">
+            <i class="fas fa-cloud"></i> <!-- Icon -->
+            <h3>Cloud & Deployment</h3>
+            <ul>
+                <li>Cloud & Deployment: Streamlit, Flask,Heroku</li>
+                <li>Version Control & Collaboration: Git, GitHub</li>
+            </ul>
+        </div>
+
+        <!-- Flex Box 5: Soft Skills -->
+        <div class="skill-box">
+            <i class="fas fa-users"></i> <!-- Icon -->
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem-Solving</li>
+                <li>Team Collaboration</li>
+                <li>Project Management</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- 🔹 Projects Section -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+        <!-- Project Cards -->
+        <div class="project-card">
+            <img src="assets\Deep.webp" alt="DeepSeek Code Companion">
+            <h3>DeepSeek Code Companion</h3>
+            <p>An AI-powered coding assistant using Streamlit, LangChain, and Ollama for debugging and code documentation.</p>
+            <a href="https://ai-resume-analyzer-nfguuxvrzwfytne2cjfber.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\Resume.jpg" alt="AI Resume Analyzer">
+            <h3>AI Resume Analyzer</h3>
+            <p>Analyzes resumes using Google Gemini AI and suggests skill improvements.</p>
+            <a href="https://ai-resume-analyzer-nfguuxvrzwfytne2cjfber.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\Doc.jpg" alt="Document Genie">
+            <h3>Document Genie</h3>
+            <p>Uses Google's Gemini-PRO with RAG to analyze PDFs and provide context-aware answers.</p>
+            <a href="https://document-genie-using-rag-framwork-aupgjwt9u6avwadhvlhdux.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\headphone-3661771.jpg" alt="Spotify Info Finder">
+            <h3>Spotify Info Finder</h3>
+            <p>Fetches track/playlist details, visualizes artist popularity, and exports data.</p>
+            <a href="https://spotify-dataproject-sfxhvaq8gwrhhpje6py4ge.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\money.jpg" alt="Finance Manager">
+            <h3>Personal Finance Manager</h3>
+            <p>Tracks expenses, sets budgets, and analyzes financial data interactively.</p>
+            <a href="https://personalfinance-wkmio3s6qvwifa3zi4qjwf.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\Churn.jpg" alt="Customer Churn App">
+            <h3>Customer Churn Prediction</h3>
+            <p>Predicts customer churn using a Random Forest model.</p>
+            <a href="https://customer-churn-prediction-app-nlg6hhw4mkgvq8gwu2uchb.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\wine.jpg" alt="Wine Quality">
+            <h3>Wine Quality Prediction</h3>
+            <p>Predicts wine quality using ML models based on user input attributes.</p>
+            <a href="https://wineprediction-nwwk4efidbvfdjmyylypng.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\cal.jpg" alt="BMI Calculator">
+            <h3>BMI Calculator</h3>
+            <p>Computes BMI, categorizes it, and provides health recommendations.</p>
+            <a href="https://calculator-jpl3lfgg9rlbjrxbd5e5k7.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\virat-kohli-practice-PTI-2025-02-136376b6fd13735306547a1fd588fdaf-16x9.webp" alt="Quiz Game">
+            <h3>Virat Kohli Quiz Game</h3>
+            <p>Interactive quiz game with MCQs about Virat Kohli.</p>
+            <a href="https://quizgame-x5ceijnhwxbdbzxuembqq4.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\wheather.jpg" alt="Weather App">
+            <h3>Weather App</h3>
+            <p>Fetches real-time weather data and displays temperature, humidity, and conditions.</p>
+            <a href="https://weatherapp-brczgqpy9nmpvgy8h3xujy.streamlit.app/" target="_blank" class="project-btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- 🔹 Contact Section -->
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Let's connect! Feel free to reach out on any of these platforms:</p>
+        <div class="social-icons">
+            <a href="https://github.com/Gokulsgn" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gokulnath-s-287038318/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/gokul_sgn" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gokul_sgn/?__pwa=1" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gokulsgn7@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

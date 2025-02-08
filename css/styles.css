@@ -1,0 +1,416 @@
+/* 🔹 General Styles (Dark Theme) */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* 🔹 Navbar Styling */
+.navbar {
+    background: #000; /* Black background */
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+
+/* 🔹 Navbar Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Logo Styling */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.logo:hover {
+    color: white;
+}
+
+/* 🔹 Desktop Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links li {
+    display: inline-block;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* 🔹 Underline Hover Effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #ffcc00;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* 🔹 Hamburger Icon */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+/* 🔹 Mobile Sidebar Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 1100;
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.mobile-menu ul li {
+    margin: 20px 0;
+}
+.mobile-menu ul li a {
+    color: #ffcc00;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.mobile-menu ul li a:hover {
+    color: white;
+}
+
+/* 🔹 Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* 🔹 Mobile View - Show Hamburger Icon & Hide Links */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* 🔹 Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero img {
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+.btn {
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #fff;
+    color: black;
+}
+
+/* 🔹 Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #111;
+    margin: 10px 0;
+}
+section h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+/* 🔹 About Me Section */
+#about {
+    padding: 50px 20px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* 🔹 About Content */
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 🔹 Section Heading */
+.about-content h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* 🔹 About Text */
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* 🔹 Highlight Text */
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+/* 🔹 Skills Section */
+#skills {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* 🔹 Heading */
+#skills h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Flex Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 🔹 Individual Skill Box */
+.skill-box {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* 🔹 Hover Effect */
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔹 Skill Box Heading */
+.skill-box h3 {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* 🔹 List Styling */
+.skill-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-box ul li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+/* 🔹 Icon Styling */
+.skill-box i {
+    font-size: 3rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+
+/* 🔹 Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/* 🔹 Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Projects Container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 🔹 Project Card */
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* 🔹 Project Image */
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Project Title */
+.project-card h3 {
+    font-size: 1.3rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Project Description */
+.project-card p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* 🔹 View Project Button */
+.project-btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+/* 🔹 Hover Effect for Button */
+.project-btn:hover {
+    background: #e6b800;
+    color: black;
+}
+/* 🔹 Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7);
+}
+
+
+/* 🔹 Contact Section */
+#contact {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* 🔹 Contact Container */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 🔹 Heading */
+.contact-container h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #ffcc00;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
